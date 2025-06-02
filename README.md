@@ -26,7 +26,7 @@ Evaluation includes accuracy, precision, recall, F1-score, and confusion matrix.
 - scikit-learn
 - pandas, numpy, matplotlib, seaborn
 
-## 🗂️ Project Structure
+## Project Structure
 
 Lung-Cancer-Prediction/
 ├── data/
