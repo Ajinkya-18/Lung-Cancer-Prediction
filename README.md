@@ -44,3 +44,26 @@ Lung-Cancer-Prediction/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+
+
+## 🛠️ Environment Setup
+
+You can recreate the environment using either of the following methods:
+
+### Using `environment.yml`
+conda env create -f environment.yml
+conda activate lung-cancer-prediction
+
+### Using requirements.txt
+python -m venv venv
+
+### Activate it:
+
+Windows:
+.\venv\Scripts\activate
+
+Linux/macOS:
+source venv/bin/activate
+
+### Install the dependencies:
+pip install -r requirements.txt
