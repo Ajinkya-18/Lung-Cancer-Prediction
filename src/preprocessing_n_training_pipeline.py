@@ -15,7 +15,7 @@ print(x_train.shape, x_test.shape, y_train.shape, y_test.shape)
 
 
 # test model
-model = load_model('models\logistic_regression_fitted.joblib')
+model = load_model('models/logistic_regression_fitted.joblib')
 print(test_model(model, x_test, y_test))
 
 

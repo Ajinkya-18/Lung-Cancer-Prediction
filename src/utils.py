@@ -117,3 +117,45 @@ def test_model(model, x_test, y_test):
 
 #-----------------------------------------------------------------------------------------------------------------
 
+def get_value_range(df) -> dict:
+    from collections import defaultdict
+
+    features_range = defaultdict(tuple)
+    for col in df.columns:
+        features_range[col] = (min(df[col]), max(df[col]))
+
+    return features_range
+
+#---------------------------------------------------------------------------------------------------------------------
+
+def get_test_data():
+    import random
+    import pandas as pd
+
+    feature_values = {'Age': [random.choice(range(14, 73))], 
+                      'Air Pollution': [random.choice(range(1, 8))], 
+                      'Alcohol use': [random.choice(range(1, 8))], 
+                      'Dust Allergy': [random.choice(range(1, 8))],
+                      'OccuPational Hazards': [random.choice(range(1, 8))], 
+                      'Genetic Risk': [random.choice(range(1, 7))], 
+                      'chronic Lung Disease': [random.choice(range(1, 7))], 
+                      'Balanced Diet': [random.choice(range(1, 7))], 
+                      'Obesity': [random.choice(range(1, 7))], 
+                      'Smoking': [random.choice(range(1, 8))], 
+                      'Passive Smoker': [random.choice(range(1, 8))], 
+                      'Chest Pain': [random.choice(range(1, 9))], 
+                      'Coughing of Blood': [random.choice(range(1, 9))], 
+                      'Fatigue': [random.choice(range(1, 9))], 
+                      'Weight Loss': [random.choice(range(1, 8))], 
+                      'Shortness of Breath': [random.choice(range(1, 9))], 
+                      'Wheezing': [random.choice(range(1, 8))], 
+                      'Swallowing Difficulty': [random.choice(range(1, 8))], 
+                      'Clubbing of Finger Nails': [random.choice(range(1, 9))], 
+                      'Frequent Cold': [random.choice(range(1, 7))],
+                      'Dry Cough': [random.choice(range(1, 7))], 
+                      'Snoring': [random.choice(range(1, 7))]}
+    
+    return pd.DataFrame(feature_values)
+
+#---------------------------------------------------------------------------------------------------------------
+
