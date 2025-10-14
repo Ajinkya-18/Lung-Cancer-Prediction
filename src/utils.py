@@ -43,8 +43,6 @@ def preprocess_data(df, col_transformer_path:str='models/col_transformer_fitted.
     # best_features = get_best_features(best_features_path)
     # return x_train_new[best_features], x_test_new[best_features], y_train_new, y_test_new
 
-
-
 #--------------------------------------------------------------------------------------------------------------
 
 def load_model(model_path:str):
