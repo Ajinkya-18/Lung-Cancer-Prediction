@@ -23,9 +23,9 @@ st.warning(
 
 
 try:
-    model = load_model('A:/AI-Projects/personal-projects/lung-cancer-classification/models/random_forest_classifier_fitted.joblib')
-    col_transformer = load_model('A:/AI-Projects/personal-projects/lung-cancer-classification/models/col_transformer_fitted.joblib')
-    target_encoder = load_model('A:/AI-Projects/personal-projects/lung-cancer-classification/models/ordinal_encoder_fitted.joblib')
+    model = load_model('models/random_forest_classifier_fitted.joblib')
+    col_transformer = load_model('models/col_transformer_fitted.joblib')
+    target_encoder = load_model('models/ordinal_encoder_fitted.joblib')
 
 except Exception as e:
     st.error(f"Error loadingthe models: {e}")
