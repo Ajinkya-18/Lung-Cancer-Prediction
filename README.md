@@ -86,6 +86,9 @@ OR
 
 - Run Streamlit from the repository root and keep the absolute path unchanged (not recommended for sharing).
 
+### Streamlit App Link:
+- [Lung Cancer Susceptibility Predictor](https://lung-cancer-susceptibility-predictor.streamlit.app/)
+
 ## Training a new model (quick guide)
 
 The repository includes a simple training workflow in `src/preprocessing_n_training_pipeline.py` and an example usage in the top of that file. Steps to retrain:
