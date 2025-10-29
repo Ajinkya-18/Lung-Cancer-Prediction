@@ -1,0 +1,14 @@
+name: Keep Streamlit App Awake
+
+on:
+  schedule:
+    - cron: '*/60 * * * *'  # every 30 minutes (UTC timezone)
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl to keep app awake
+        run: |
+          curl -s https://lung-cancer-susceptibility-predictor.streamlit.app
