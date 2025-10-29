@@ -4,6 +4,13 @@ This repository contains a small end-to-end machine learning project to classify
 
 This README documents the implementation, code layout, how to run the app, and how to retrain or test models locally.
 
+---
+
+## Streamlit App Link:
+[Lung Cancer Susceptibility Predictor](https://lung-cancer-susceptibility-predictor.streamlit.app/)
+
+---
+
 ## Repository layout (important files)
 
 - `app/app.py` — Streamlit web app. Loads the pre-fitted column transformer, target encoder and a trained classifier (Random Forest by default) from `models/` and provides a sidebar to enter patient features and request predictions.
@@ -67,27 +74,6 @@ Run the app from the repository root (PowerShell):
 cd A:\AI-Projects\personal-projects\lung-cancer-classification
 streamlit run app\app.py
 ```
-
-Important: the Streamlit app in `app/app.py` currently loads model artifacts using an absolute path. If you clone this repo elsewhere, either:
-
-- Update the paths in `app/app.py` to relative paths (recommended). For example, change:
-
-```python
-load_model('A:/AI-Projects/personal-projects/lung-cancer-classification/models/random_forest_classifier_fitted.joblib')
-```
-
-to
-
-```python
-load_model('models/random_forest_classifier_fitted.joblib')
-```
-
-OR
-
-- Run Streamlit from the repository root and keep the absolute path unchanged (not recommended for sharing).
-
-### Streamlit App Link:
-- [Lung Cancer Susceptibility Predictor](https://lung-cancer-susceptibility-predictor.streamlit.app/)
 
 ## Training a new model (quick guide)
 
