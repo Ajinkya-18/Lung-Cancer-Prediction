@@ -11,6 +11,11 @@ This README documents the implementation, code layout, how to run the app, and h
 
 ---
 
+### Hire me for your next AI Project on Fiverr: 
+[My Fiverr Profile](https://www.fiverr.com/s/ZmD23WR)
+
+---
+
 ## Repository layout (important files)
 
 - `app/app.py` — Streamlit web app. Loads the pre-fitted column transformer, target encoder and a trained classifier (Random Forest by default) from `models/` and provides a sidebar to enter patient features and request predictions.
